@@ -14,8 +14,8 @@ services:
       - db_data:/var/lib/postgresql/data
 
   backend:
-    container_name: foodgram_backend
-    image: smalex02/foodgram_backend
+    container_name: foodgram_project_backend
+    image: smalex02/foodgram_project_backend
     env_file: .env
     depends_on:
       - db
@@ -24,15 +24,15 @@ services:
       - media_value:/media
 
   frontend:
-    container_name: foodgram_frontend
-    image: smalex02/foodgram_frontend
+    container_name: foodgram_project_frontend
+    image: smalex02/foodgram_project_frontend
     volumes:
       - ../frontend/:/app/result_build/
     depends_on:
       - db
 
   gateway:
-    image: smalex02/foodgram_gateway
+    image: smalex02/foodgram_project_gateway
     env_file: .env
     ports:
       - 8000:80

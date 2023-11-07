@@ -1,6 +1,5 @@
 from djoser.serializers import UserCreateSerializer, UserSerializer
 from rest_framework.serializers import SerializerMethodField
-
 from users.models import Subscriber, User
 
 

@@ -1,12 +1,11 @@
 from django.db import transaction
 from drf_extra_fields.fields import Base64ImageField
+from recipes.models import (Favorite, Ingredient, IngredientRecipe, Recipes,
+                            ShopCart, Tags)
 from rest_framework import serializers
 from rest_framework.fields import IntegerField, SerializerMethodField
 from rest_framework.relations import PrimaryKeyRelatedField
 from rest_framework.serializers import SerializerMethodField
-
-from recipes.models import (Favorite, Ingredient, IngredientRecipe, Recipes,
-                            ShopCart, Tags)
 from users.serializers import CustomUserSerializer
 
 

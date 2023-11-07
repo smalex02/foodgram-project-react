@@ -5,9 +5,9 @@ from rest_framework.fields import IntegerField, SerializerMethodField
 from rest_framework.relations import PrimaryKeyRelatedField
 from rest_framework.serializers import SerializerMethodField
 
+from recipes.models import (Favorite, Ingredient, IngredientRecipe, Recipes,
+                            ShopCart, Tags)
 from users.serializers import CustomUserSerializer
-from recipes.models import (Ingredient, Tags, Recipes, IngredientRecipe,
-                            Favorite, ShopCart)
 
 
 class IngredientSerializer(serializers.ModelSerializer):

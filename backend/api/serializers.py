@@ -5,7 +5,6 @@ from recipes.models import (Favorite, Ingredient, IngredientRecipe, Recipes,
 from rest_framework import serializers
 from rest_framework.fields import IntegerField, SerializerMethodField
 from rest_framework.relations import PrimaryKeyRelatedField
-from rest_framework.serializers import SerializerMethodField
 from users.serializers import CustomUserSerializer
 
 

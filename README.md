@@ -6,7 +6,7 @@ Python, Django, Django Rest Framework, Docker, Gunicorn, NGINX, PostgreSQL, Yand
 ### Развертывание проекта:
 1. На сервере создайте директорию для приложения:
     ```bash
-    mkdir foodgram/infra
+    mkdir foodgram
     ```
 2. В папку _infra_ скопируйте файлы `docker-compose.production.yml`
 3. Создайте файл `/infra/.env` со следуищими переменными:

@@ -9,7 +9,7 @@ Python, Django, Django Rest Framework, Docker, Gunicorn, NGINX, PostgreSQL, Yand
     mkdir foodgram
     ```
 2. В папку _infra_ скопируйте файлы `docker-compose.production.yml`
-3. Создайте файл `/infra/.env` со следуищими переменными:
+3. Создайте файл `.env` со следуищими переменными:
    ```
    POSTGRES_USER=... # имя пользователя БД
    POSTGRES_PASSWORD=... # пароль от БД

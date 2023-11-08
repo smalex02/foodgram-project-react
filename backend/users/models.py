@@ -3,6 +3,9 @@ from django.db import models
 
 
 class User(AbstractUser):
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
+
     email = models.EmailField(
         max_length=254,
         unique=True,
@@ -23,12 +26,6 @@ class User(AbstractUser):
         max_length=150,
         verbose_name='Фамилия',
         blank=False,
-    )
-    password = models.CharField(
-        verbose_name='Пароль',
-        max_length=150,
-        blank=False,
-        null=False,
     )
 
     class Meta:
